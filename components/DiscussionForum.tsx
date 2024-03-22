@@ -57,7 +57,7 @@ const DUMMY_USERS = [
 const DiscussionForum = () => {
   return (
     <div className="w-full">
-        <h1 className="hidden md:block text-2xl text-red-500 px-4 py-1 uppercase w-fit bg-slate-200 font-[500] mb-4">Discussion Forum</h1>
+        <h1 className="hidden sm:block text-2xl text-red-500 px-4 py-1 uppercase w-fit bg-slate-200 font-[500] mb-4">Discussion Forum</h1>
       <ul className="flex flex-col gap-8">
         {DUMMY_USERS.map((user, index) => (
           <DiscussionForumCard
