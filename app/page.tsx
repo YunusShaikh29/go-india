@@ -7,30 +7,26 @@ import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 
 export default function Home() {
- const router = useRouter()
+  const router = useRouter();
   const [screenWidth, setScreenWidth] = useState(0);
 
   useEffect(() => {
-   
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
     };
 
     if (typeof window !== "undefined") {
-      
       setScreenWidth(window.innerWidth);
       window.addEventListener("resize", handleResize);
     }
 
     return () => {
-      
       window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   useEffect(() => {
-    
-    if (screenWidth <= 640) {
+    if (screenWidth <= 641) {
       router.push("/discussion-forum");
     } else {
       router.push("/");
