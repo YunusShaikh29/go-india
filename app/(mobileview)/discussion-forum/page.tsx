@@ -90,7 +90,7 @@ const Page = () => {
 	}, []);
 
 	useEffect(() => {
-		// Redirecting based on screen width
+		
 		if (screenWidth <= 640) {
 			router.push("/discussion-forum");
 		} else {

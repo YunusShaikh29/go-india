@@ -56,7 +56,6 @@ const MarketStories = () => {
 	}, []);
 
 	useEffect(() => {
-		// Redirecting based on screen width
 		if (screenWidth <= 640) {
 			router.push("/market-stories");
 		} else {
